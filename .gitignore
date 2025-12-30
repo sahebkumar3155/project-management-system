@@ -1,0 +1,12 @@
+# IDE
+.idea/
+
+# Backend
+backend/target/
+
+# Frontend
+frontend/node_modules/
+frontend/dist/
+
+# Env
+.env
