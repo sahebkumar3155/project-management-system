@@ -4,7 +4,11 @@ WORKDIR /app
 
 RUN apk add --no-cache maven
 
+# copy only backend code
 COPY . .
+
+# go inside backend folder where pom.xml exists
+WORKDIR /app/backend
 
 RUN mvn clean package -DskipTests
 
